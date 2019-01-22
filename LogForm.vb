@@ -41,7 +41,7 @@ Public Class LogForm
                         sw.WriteLine(TextBox1.Text)
                     End Using
                 Else
-            'Append the new lines into the the "File.txt"
+                    'Append the new lines into the the "File.txt"
                     Using sw As StreamWriter = File.AppendText(path)
                         sw.WriteLine(TextBox1.Text)
                     End Using
