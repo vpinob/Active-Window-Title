@@ -20,7 +20,6 @@ Public Class LogForm
             End Function
             
             'Set the window title into TextBox1 each 5 seconds.
-            
             Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
 
                 TextBox1.Text = TextBox1.Text + vbNewLine & My.Computer.Clock.LocalTime + " - " & GetActiveWindowTitle()
